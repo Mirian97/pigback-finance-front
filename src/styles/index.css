@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100vh;
+}
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.css-lcrdz2-MuiFormHelperText-root {
+  font-size: 1.2rem !important;
+}
+
+.css-ki1hdl-MuiAlert-action {
+  padding: 0 !important;
+}
+
+.light-blue {
+  background-color: #eef6f6 !important;
+  color: #1fa7af;
+}
+
+.light-pink {
+  background-color: #ffefef !important;
+  color: #971d1d;
+}
+
+.light-yellow {
+  background-color: #fcf6dc !important;
+  color: #c5a605;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.status-overdue {
+  color: #971d1d;
+  background-color: #ffefef;
+}
+
+.status-up-to-date {
+  color: #1fa7af;
+  background-color: #eef6f6;
+}
+
+.css-76mym1-MuiButtonBase-root-MuiButton-root {
+  position: static !important;
+}
