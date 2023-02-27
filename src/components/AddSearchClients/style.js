@@ -7,6 +7,7 @@ export const CustomSectionAddSearchClients = styled('section')`
     justify-content: space-between;
     margin: 30px 0;
     padding: 0 50px;
+    flex-wrap: wrap;
 
     .people-text {
       display: flex;
@@ -59,6 +60,10 @@ export const CustomSectionAddSearchClients = styled('section')`
           position: absolute;
           right: 15px;
           top: 10px;
+        }
+
+        ${theme.breakpoints.down('md')} {
+          margin-top: 8px;
         }
       }
     }
