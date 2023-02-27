@@ -16,7 +16,7 @@ No fork de vocês, favor alterar este README para adicionar os links corresponde
 
 **Repositório de Frontend**: https://github.com/lio-soares/front-integral-m05-t08
 
-**URL da aplicação funcionando**: https://63dae964b92d630008c2f4bb--deft-pasca-303a87.netlify.app/
+**URL da aplicação funcionando**: https://pigback-finance.netlify.app/
 
 ---
 
