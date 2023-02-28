@@ -89,8 +89,9 @@ function ModalAddEditClient({ edit }) {
   }
 
   function handleCloseAndClearForm() {
-    setOpenModalAddEditClient(false)
     reset()
+    reset({ zip_code: '' })
+    setOpenModalAddEditClient(false)
   }
 
   useEffect(() => {
