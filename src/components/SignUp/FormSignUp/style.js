@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { css, Typography } from '@mui/material'
 
-export const CustomFormSignUp = styled('form')`
+export const CustomFormSignUp = styled('div')`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;

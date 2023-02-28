@@ -21,8 +21,8 @@ function ModalDeleteCharge() {
     try {
       await deleteCharge(token, currentCharge.charge_id)
       notifySucessDeleteCharge()
-      handleDetailClient(detailClient.id)
-      handleListCharges()
+      detailClient && (await handleDetailClient(detailClient.id))
+      await handleListCharges()
     } catch (error) {
       messageError(error.response.data.mensagem)
     } finally {

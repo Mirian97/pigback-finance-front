@@ -39,6 +39,7 @@ function ModalAddEditClient({ edit }) {
       await handleRegisterClient(submitValues)
     }
     handleCloseAndClearForm()
+    await handleListClients()
   }
 
   async function handleEditClient(body) {
@@ -55,7 +56,6 @@ function ModalAddEditClient({ edit }) {
     try {
       await registerClient(token, body)
       notifySucessRegisterClient()
-      handleListClients()
     } catch (error) {
       messageError(error.response.data.mensagem)
     }

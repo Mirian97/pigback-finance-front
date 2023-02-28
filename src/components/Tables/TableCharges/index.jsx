@@ -10,7 +10,7 @@ import {
   CustomTypographyEllipsis
 } from '../../../styles/typography'
 import { chargeClasses1 } from '../../../utils/constants'
-import { handleFormatToMoney } from '../../../utils/formatters'
+import { handleFormatDate, handleFormatToMoney } from '../../../utils/formatters'
 import { handleSearch } from '../../../utils/functions'
 import { handleOrderById, handleOrderByName } from '../../../utils/sort'
 import NotFound from '../../NotFound'
@@ -93,7 +93,7 @@ function TableCharges() {
                 </td>
                 <td>{charge.charge_id}</td>
                 <td>{handleFormatToMoney(charge.amount)}</td>
-                <td>{charge.due_date}</td>
+                <td>{handleFormatDate(charge.due_date)}</td>
                 <td>
                   <span className={chargeClasses1[charge.status]}>{charge.status}</span>
                 </td>

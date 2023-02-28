@@ -11,16 +11,17 @@ html {
   font-size: 62.5%;
   height: 100vh;
 }
+
 body {
   min-height: 100vh;
 }
 
-#root {
-  height: 100%;
-}
-
 a {
   cursor: pointer;
+}
+
+.MuiFormHelperText-contained.css-dqcq0o {
+  font-size: 1.2rem !important;
 }
 
 .css-lcrdz2-MuiFormHelperText-root {

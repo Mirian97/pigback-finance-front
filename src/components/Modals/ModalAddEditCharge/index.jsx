@@ -47,8 +47,8 @@ function ModalAddEditCharge() {
     } else {
       await handleRegisterCharge(submitValues)
     }
-    handleDetailClient(detailClient.id)
-    handleListCharges()
+    detailClient && (await handleDetailClient(detailClient.id))
+    await handleListCharges()
     handleCloseAndClearForm()
   }
 

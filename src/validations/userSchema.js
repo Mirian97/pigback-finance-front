@@ -2,9 +2,12 @@ import * as Yup from 'yup'
 import { messages } from './messages'
 const { fieldRequired, emailValid, passwordDoesntMatch, cpfMustHas11Digits } = messages
 
-export const signUpSchema = Yup.object().shape({
+export const firstStepSignUpSchema = Yup.object().shape({
   name: Yup.string().required(fieldRequired),
-  email: Yup.string().email(emailValid).required(fieldRequired),
+  email: Yup.string().email(emailValid).required(fieldRequired)
+})
+
+export const secondStepSignUpSchema = Yup.object().shape({
   password: Yup.string().required(fieldRequired),
   confirmPassword: Yup.string()
     .oneOf([Yup.ref('password'), null], passwordDoesntMatch)

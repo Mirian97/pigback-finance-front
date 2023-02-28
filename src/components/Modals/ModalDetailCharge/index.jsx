@@ -5,7 +5,7 @@ import useGlobal from '../../../hooks/useGlobal'
 import useUser from '../../../hooks/useUser'
 import { CustomBackdrop } from '../../../styles/backdrop'
 import { chargeClasses1 } from '../../../utils/constants'
-import { handleFormatToMoney } from '../../../utils/formatters'
+import { handleFormatDate, handleFormatToMoney } from '../../../utils/formatters'
 import { CustomModalCharge } from './style.js'
 
 function ModalDetailCharge() {
@@ -53,7 +53,7 @@ function ModalDetailCharge() {
                   Vencimento
                 </Typography>
                 <Typography variant='body1' color='grey.200'>
-                  {currentCharge?.due_date}
+                  {handleFormatDate(currentCharge?.due_date)}
                 </Typography>
               </Grid>
               <Grid item xs={6}>

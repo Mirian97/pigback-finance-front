@@ -1,6 +1,5 @@
 import styled from '@emotion/styled'
 import { Button, css } from '@mui/material'
-
 export const CustomSectionAddSearchClients = styled('section')`
   ${({ theme }) => css`
     display: flex;
@@ -19,7 +18,6 @@ export const CustomSectionAddSearchClients = styled('section')`
         margin-right: 16px;
       }
     }
-
     .container-add-search {
       font-family: 'Nunito';
       display: flex;
@@ -54,7 +52,6 @@ export const CustomSectionAddSearchClients = styled('section')`
             color: ${theme.palette.grey[300]};
           }
         }
-
         .search-icon {
           cursor: pointer;
           position: absolute;
@@ -69,7 +66,6 @@ export const CustomSectionAddSearchClients = styled('section')`
     }
   `}
 `
-
 export const CustomButtomAddClient = styled(Button)`
   ${({ theme }) => css`
     width: 267px;

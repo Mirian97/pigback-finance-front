@@ -26,7 +26,7 @@ import {
   CustomTypographyNamePage
 } from '../../styles/typography'
 import { chargeClasses1 } from '../../utils/constants'
-import { handleFormatToMoney } from '../../utils/formatters'
+import { handleFormatDate, handleFormatToMoney } from '../../utils/formatters'
 import { handleOrderById } from '../../utils/sort'
 import {
   CustomCardChargesClient,
@@ -195,7 +195,7 @@ function DetailClient() {
             {detailChargesClient.map((charge) => (
               <tr onClick={() => handleOpenModalCharge(charge)} key={charge.charge_id}>
                 <td>{charge.charge_id}</td>
-                <td>{charge.due_date}</td>
+                <td>{handleFormatDate(charge.due_date)}</td>
                 <td>{handleFormatToMoney(charge.amount)}</td>
                 <td>
                   <span className={chargeClasses1[charge.status]}>{charge.status}</span>
